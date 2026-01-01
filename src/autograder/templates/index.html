@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head><title>AutoGrader AI</title></head>
+<body>
+<h1>AutoGrader AI — Upload Code</h1>
+<form action="/analyze" method="post" enctype="multipart/form-data">
+  <input type="file" name="file" accept=".py,.cpp,.cc,.c"/><br/><br/>
+  <input type="submit" value="Analyze"/>
+</form>
+<p>Tip: run <code>python -m src.autograder.train</code> to train model first.</p>
+</body>
+</html>

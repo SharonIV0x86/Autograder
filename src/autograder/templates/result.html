@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><title>Result</title></head>
+<body>
+<h1>Result — {{ filename }}</h1>
+<h2>Prediction: {% if pred==1 %}PASS{% else %}FAIL{% endif %}</h2>
+{% if prob %}
+<p>Probabilities: {{ prob }}</p>
+{% endif %}
+<h3>Extracted Features</h3>
+<pre>{{ feats|tojson(indent=2) }}</pre>
+<p><a href="/">Upload another</a></p>
+</body>
+</html>
